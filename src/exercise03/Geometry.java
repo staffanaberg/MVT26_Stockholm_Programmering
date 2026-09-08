@@ -5,9 +5,17 @@ public class Geometry {
     public static void main(String[] args) {
 
 
-        Circle circle = new Circle(10);
+        Circle circle = new Circle(4);
         System.out.println(circle.calculateArea());
         System.out.println(circle.calculateCircumference());
+
+        if(circle.hasSmallArea()) {
+            System.out.println("Det är en liten area");
+        } else {
+            System.out.println("Det är en stor area");
+        }
+
+
 
         Rectangle rectangle = new Rectangle(12, 12);
         System.out.println(rectangle.area());
