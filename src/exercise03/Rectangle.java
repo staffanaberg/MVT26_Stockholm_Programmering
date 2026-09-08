@@ -10,11 +10,22 @@ public class Rectangle {
         this.height = height;
     }
 
-    public void setWidth(int newWidth) {
-        if(newWidth>0) {
-            width = newWidth;
-        }
+    public void setWidth(int width) {
+        this.width = width;
     }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    //metodNamn? getWidth
+    //datatyp?   int
+    //värde?     width
+
 
     //metod för att returnera area
 
@@ -44,7 +55,6 @@ public class Rectangle {
 
     //där bredd och höjd är lika => true
     //de är inte lika => false
-
 
 
 }
