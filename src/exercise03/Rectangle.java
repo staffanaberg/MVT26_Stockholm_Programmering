@@ -10,6 +10,12 @@ public class Rectangle {
         this.height = height;
     }
 
+    public void setWidth(int newWidth) {
+        if(newWidth>0) {
+            width = newWidth;
+        }
+    }
+
     //metod för att returnera area
 
     public int area() {
