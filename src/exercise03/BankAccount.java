@@ -15,7 +15,13 @@ public class BankAccount {
     }
 
 
+    public int getBalance() {
+        return balance;
+    }
 
+    //metodNamn:       getBalance
+    //return datatyp:  int
+    //värde:           balance
 
 
     //Utöka programmet så att man kan bestämma
@@ -31,13 +37,12 @@ public class BankAccount {
     //datatyp för parameter  int
 
 
-
     public void metodNamn() {
         //något vi gör
     }
 
     public void printBalance() {
-        System.out.println("Saldot är: " +balance);
+        System.out.println("Saldot är: " + balance);
     }
 
     //Metod som sätter in pengar på vårt saldo
@@ -49,7 +54,10 @@ public class BankAccount {
     //Metod som tar ut pengar från vårt saldo
     //Dvs. minskar saldo med en viss summa
     public void withdraw(int withdrawSum) {
-        balance -= withdrawSum;
+        //OM balance blir mindre än 0 (withdrawSum > balance)
+        if (withdrawSum <= balance) {
+            balance -= withdrawSum;
+        }
     }
 
 

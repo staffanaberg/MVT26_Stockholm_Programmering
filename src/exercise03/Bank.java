@@ -5,11 +5,12 @@ public class Bank {
     public static void main(String[] args) {
 
         BankAccount account = new BankAccount(1000);
-        account.printBalance();
+
+        System.out.println("Saldot är: " +account.getBalance());
         account.deposit(200);
-        account.printBalance();
-        account.withdraw(500);
-        account.printBalance();
+        System.out.println("Saldot är: " +account.getBalance());
+        account.withdraw(1500);
+        System.out.println("Saldot är: " +account.getBalance());
 
 
     }
