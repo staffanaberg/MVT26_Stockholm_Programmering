@@ -17,7 +17,7 @@ public class Geometry {
 
 
 
-        Rectangle rectangle = new Rectangle(12, 12);
+        Rectangle rectangle = new Rectangle();
         System.out.println(rectangle.area());
         System.out.println(rectangle.circumference());
 
