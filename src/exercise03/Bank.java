@@ -6,7 +6,9 @@ public class Bank {
 
         BankAccount account = new BankAccount(1000);
 
-        System.out.println("Saldot är: " +account.getBalance());
+        int currentBalance = account.getBalance();
+        currentBalance = currentBalance/10;
+        System.out.println("Saldot är: " +currentBalance);
         account.deposit(200);
         System.out.println("Saldot är: " +account.getBalance());
         account.withdraw(1500);

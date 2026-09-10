@@ -5,9 +5,14 @@ public class BankAccount {
     //Attributsnamn: balance
     //datatyp:       int
     private int balance;
+    private String accountName;
 
     public BankAccount(int balance) {
         this.balance = balance;
+    }
+    public BankAccount(int balance, String accountName) {
+        this.balance = balance;
+        this.accountName = accountName;
     }
 
     public BankAccount() {
