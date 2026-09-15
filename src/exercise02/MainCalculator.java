@@ -9,8 +9,11 @@ public class MainCalculator {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
+
         System.out.println("Skriv in första talet");
+
         int num1 = scan.nextInt();
+
         System.out.println("Skriv in andra talet");
         int num2 = scan.nextInt();
 
@@ -19,7 +22,9 @@ public class MainCalculator {
 
         // och anropa denna metod (som ju heter add())
         System.out.print("Summan blir: ");
+
         int sum = calc.add();
+
         System.out.println(sum);
         //System.out.println(calc.add());
 
