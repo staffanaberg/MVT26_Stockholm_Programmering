@@ -8,13 +8,16 @@ public class Exercise07 {
                 6, 1, 2, 34, 4, 5, 6, -7, 78, -9,
                 40, 1, 2, 3, 41, 5, 6, -7, 8, 9,
                 6, 1, -2, 3, 4, -5, 6, -7, -8, -9,
-                7, 1, -42, 3, -4, 95, 6, 7, 8, 39
+                7, 1, -42, 3, -4, 95, 6, 7, 8, 39,
+                40, 1, 2, 3, 41, 5, 6, -7, 8, 123
         };
 
         int index = 0;
 
+        int last = numbers.length -1;
+
         //gå igenom array baklänges
-        for(int i=49; i>=0; i--) {
+        for(int i=last; i>=0; i--) {
             //jämföra om ett tal är negativt
             //om det är negativt så spara index och avbryt loopen
             if (numbers[i] < 0) {
@@ -25,6 +28,8 @@ public class Exercise07 {
         //skriv ut index
         System.out.println("det sista negativa talet har index: " +index);
         System.out.println("och talet är: " +numbers[index]);
+
+        System.out.println("det sista talet är: " +numbers[last]);
 
     }
 
